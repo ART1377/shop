@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.rtl.min.css"
+        integrity="sha384-7mQhpDl5nRA5nY9lr8F1st2NbIly/8WqhjTp+0oFxEA/QUuvlbF6M1KXezGBh3Nb" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>فروشگاه</title>
+</head>
+
+<body>
+
+    <!--start navbar ==================================================== -->
+    <section class="navbar-section sticky-top" id="navbar-section">
+        <nav class="navbar navbar-expand-lg py-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="logo" class="logo-img">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown fw-bold">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">کالاهای دیجیتال</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row gy-4 container mx-auto">
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">موبایل</h5>
+                                        <a class="dropdown-item" href="#">اپل</a>
+                                        <a class="dropdown-item" href="#">سامسونگ</a>
+                                        <a class="dropdown-item" href="#">شیائومی</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">لپ تاپ</h5>
+                                        <a class="dropdown-item" href="#">لنوو</a>
+                                        <a class="dropdown-item" href="#">اپل</a>
+                                        <a class="dropdown-item" href="#">ایسوس</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">لوازم جانبی</h5>
+                                        <a class="dropdown-item" href="#">شارژر</a>
+                                        <a class="dropdown-item" href="#">هندزفری</a>
+                                        <a class="dropdown-item" href="#">گارد</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/apple-set.jpg" alt="" class="dropdown-img-tech dropdown-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown fw-bold">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">مد و پوشاک</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <div class="row gy-4 container mx-auto">
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">مردانه</h5>
+                                        <a class="dropdown-item" href="#">پیراهن</a>
+                                        <a class="dropdown-item" href="#">شلوار</a>
+                                        <a class="dropdown-item" href="#">کفش</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">زنانه</h5>
+                                        <a class="dropdown-item" href="#">پیراهن</a>
+                                        <a class="dropdown-item" href="#">شلوار</a>
+                                        <a class="dropdown-item" href="#">کفش</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <h5 class="dropdown-item dropdown-item-title">بچه گانه</h5>
+                                        <a class="dropdown-item" href="#">پیراهن</a>
+                                        <a class="dropdown-item" href="#">شلوار</a>
+                                        <a class="dropdown-item" href="#">کفش</a>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <img src="img/p2.jpg" alt="" class="dropdown-img-clothes dropdown-item">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown fw-bold">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">زیبایی و سلامت</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">آرایشی</a>
+                                <a class="dropdown-item" href="#">بهداشتی</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-2 navbar-expand pt-0">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav w-100">
+                    <div class="right-nav-2 d-flex">
+                        <div class="me-5 dark-mood-container d-flex justify-content-center align-items-center">
+                            <i class="fa fa-moon fs-4 dark-mood-icon mood-icon"></i>
+                            <i class="fa fa-sun fs-4 light-mood-icon mood-icon d-none"></i>
+                        </div>
+                        <form class="d-flex my-2 my-lg-0 w-100 navbar-form search-form">
+                            <input class="form-control me-sm-2 navbar-form-input p-2" type="text"
+                                placeholder="&#xF002; جستجو" style="font-family: FontAwesome">
+                        </form>
+                    </div>
+                    <div class="login-shop ms-auto d-flex justify-content-center align-items-center">
+                        <div class="login-container me-3">
+                            <i class="fa fa-sign-in-alt"> ورود</i>
+                            <i class="fw-bold"> ثبت نام</i>
+                        </div>
+                        <div class="shopping-cart-container my-auto btn btn-primary">
+                            <a type="button"
+                                class="btn btn-primary position-relative shopping-cart-btn fa fa-shopping-cart">
+                                <span
+                                    class="shopping-cart-count position-absolute p-2 fs-5 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <!--end navbar ==================================================== -->
+
+
+    <!--start hero ==================================================== -->
+    <section class="hero px-3 pt-2" id="hero">
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col-8 hero-big pe-3">
+                    <div id="carouselId" class="carousel slide hero-carousel" data-bs-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselId" data-bs-slide-to="0"
+                                class="active carousel-indicators-item" aria-current="true" aria-label="First slide">
+                            </li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"
+                                class="carousel-indicators-item"></li>
+                            <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"
+                                class="carousel-indicators-item"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="card border-0 rounded-0 text-white">
+                                    <img class="card-img w-100 d-block carousel-item-img" src="img/cosmetic.jpg"
+                                        alt="Title">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-center text-center justify-content-center">
+                                        <h1 class="card-title w-50 fw-bold">بهترین و با کیفیت ترین لوازم آرایشی بهداشتی
+                                        </h1>
+                                        <p class="card-text pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                            چاپ و با استفاده از طراحان گرافیک است</p>
+                                        <button class="btn btn-outline-light fw-bold px-5 mt-4">خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-white">
+                                    <img class="card-img w-100 d-block carousel-item-img" src="img/laptop.jpg"
+                                        alt="Title">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-center text-center justify-content-center">
+                                        <h1 class="card-title w-50 fw-bold">عرضه ی مدرن ترین لوازم دیجیتال روز دنیا</h1>
+                                        <p class="card-text pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                            چاپ و با استفاده از طراحان گرافیک است</p>
+                                        <button class="btn btn-outline-light fw-bold px-5 mt-4">خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card border-0 rounded-0 text-white">
+                                    <img class="card-img w-100 d-block carousel-item-img" src="img/banner.jpg"
+                                        alt="Title">
+                                    <div
+                                        class="card-img-overlay d-flex flex-column align-items-center text-center justify-content-center">
+                                        <h1 class="card-title w-50 fw-bold">با کیفیت ترین لباس های ایرانی و خارجی</h1>
+                                        <p class="card-text pt-4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت
+                                            چاپ و با استفاده از طراحان گرافیک است</p>
+                                        <button class="btn btn-outline-light fw-bold px-5 mt-4">خرید</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="col-4 hero-small pe-0 overflow-hidden">
+                    <div class="row hero-small-top">
+                        <div class="card border-0 rounded-0 text-white">
+                            <img class="card-img" src="img/shop1.jpg" alt="Title">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title w-50 text-center pb-2">جشنواره ی فروش لباس های زمستان</h4>
+                                    <button class="btn btn-outline-light fw-bold px-3 card-btn">خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row hero-small-bottom">
+                        <div class="card border-0 rounded-0 text-white">
+                            <img class="card-img" src="img/apple-set.jpg" alt="Title">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title w-50 text-center pb-2">تخقیق خرید کالای دیجیتال</h4>
+                                <button class="btn btn-outline-light fw-bold px-3 card-btn">خرید</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end hero ==================================================== -->
+
+
+    <!--start discount ==================================================== -->
+    <section class="discount py-5 my-5" id="discount">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">آخرین محصولات دارای تخفیف</h1>
+                    <p class="info-text pt-2 pb-4 w-75 mx-auto">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+            </div>
+            <div class="row discount-row-slider mt-4">
+                <div class="container-fluid">
+                    <div class="swiper mySwiper discount-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="1">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (1).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">180000</p>
+                                            <p class="card-text card-product-price-before">200000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="2">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (2).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">200000</p>
+                                            <p class="card-text card-product-price-before">250000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="3">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (3).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">380000</p>
+                                            <p class="card-text card-product-price-before">400000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="4">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (4).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">400000</p>
+                                            <p class="card-text card-product-price-before">450000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="5">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (5).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">630000</p>
+                                            <p class="card-text card-product-price-before">700000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="6">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (6).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">550000</p>
+                                            <p class="card-text card-product-price-before">620000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="7">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (7).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">880000</p>
+                                            <p class="card-text card-product-price-before">1000000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="8">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (8).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">770000</p>
+                                            <p class="card-text card-product-price-before">820000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="9">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (9).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">260000</p>
+                                            <p class="card-text card-product-price-before">290000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card card-product" data-quantity="1" value="10">
+                                    <img class="card-img-top card-product-img" src="img/discount-perfume (10).jpg"
+                                        alt="Title">
+                                    <div class="card-body card-product-body text-center px-0">
+                                        <h4 class="card-title card-product-title pb-2">ادکلن</h4>
+                                        <div class="price-container d-flex justify-content-evenly w-100">
+                                            <p class="card-text card-product-price-after">340000</p>
+                                            <p class="card-text card-product-price-before">380000</p>
+                                        </div>
+                                        <a class="main-btn">خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end discount ==================================================== -->
+
+
+
+    <!--start category ==================================================== -->
+    <section class="category py-5 my-5" id="category">
+        <div class="container">
+            <div class="row category-info-row pb-5">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">دسته بندی محصولات</h1>
+                </div>
+            </div>
+
+
+            <div class="row g-4 gy-5 category-item-row">
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-handsfree.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">کالای دیجیتال</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-clothes.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">مد و پوشاک</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-makeup.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">زیبایی و سلامت</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-book.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">کتاب</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-product.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">کالاهای سوپرمارکتی</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="category-container d-flex flex-column align-items-center">
+                        <div class="category-item">
+                            <img src="img/category-mobile.jpg" alt="" class="categoty-img">
+                        </div>
+                        <a class="category-text pt-3">موبایل</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end category ==================================================== -->
+
+
+    <!--start advertisement 1 ==================================================== -->
+    <section class="advertisement-1 my-5 py-5" id="advertisement-1">
+        <div class="container-fluid mt-5">
+            <div class="row g-4 px-4">
+                <div class="col-sm-6">
+                    <img src="img/ad-banner (5).jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/ad-banner (6).jpg" alt="" class="rounded-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end advertisement 1 ==================================================== -->
+
+
+    <!--start brand ==================================================== -->
+    <section class="brand py-5 my-5" id="brand">
+        <div class="container-fluid text-center">
+            <div class="row pb-4">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">محبوب ترین برندها</h1>
+                    <p class="info-text pt-2 pb-4 w-75 mx-auto">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-3 brand-item">
+                    <img src="img/brand-samsung.png" alt="" class="brand-img">
+                </div>
+                <div class="col-6 col-md-3 brand-item">
+                    <img src="img/brand-cocacola.jpg" alt="" class="brand-img">
+                </div>
+                <div class="col-6 col-md-3 brand-item">
+                    <img src="img/brand-versace.jpg" alt="" class="brand-img">
+                </div>
+                <div class="col-6 col-md-3 brand-item">
+                    <img src="img/brand-nivea.png" alt="" class="brand-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end brand ==================================================== -->
+
+
+
+    <!--start product ==================================================== -->
+    <section class="product my-5 py-5" id="product">
+        <div class="container">
+            <div class="row product-info-row my-5">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">منتخب محصولات تخفیف و حراج</h1>
+                </div>
+            </div>
+            <div class="row filter-row d-flex justify-content-center align-items-center mb-2">
+                <button class="filter-btn btn btn-danger">همه</button>
+                <button class="filter-btn btn btn-success">موبایل</button>
+                <button class="filter-btn btn btn-warning">لپ تاپ</button>
+                <button class="filter-btn btn btn-dark">ساعت</button>
+                <button class="filter-btn btn btn-primary">لباس</button>
+                <button class="filter-btn btn btn-secondary">کفش</button>
+            </div>
+            <div class="row g-4 p-4 product-item-row">
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="11">
+                        <img class="card-img-top card-product-img" src="img/product (1).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">موبایل</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">4800000</p>
+                                <p class="card-text card-product-price-before">5200000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="12">
+                        <img class="card-img-top card-product-img" src="img/product (2).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">موبایل</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">5000000</p>
+                                <p class="card-text card-product-price-before">5300000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="13">
+                        <img class="card-img-top card-product-img" src="img/product (3).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لپ تاپ</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">48000000</p>
+                                <p class="card-text card-product-price-before">52000000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="14">
+                        <img class="card-img-top card-product-img" src="img/product (4).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لپ تاپ</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">32000000</p>
+                                <p class="card-text card-product-price-before">35000000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="15">
+                        <img class="card-img-top card-product-img" src="img/product (5).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">ساعت</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">800000</p>
+                                <p class="card-text card-product-price-before">880000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="16">
+                        <img class="card-img-top card-product-img" src="img/product (6).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">ساعت</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">500000</p>
+                                <p class="card-text card-product-price-before">540000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="17">
+                        <img class="card-img-top card-product-img" src="img/product (7).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لباس</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">480000</p>
+                                <p class="card-text card-product-price-before">520000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="18">
+                        <img class="card-img-top card-product-img" src="img/product (8).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لباس</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">560000</p>
+                                <p class="card-text card-product-price-before">600000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="19">
+                        <img class="card-img-top card-product-img" src="img/product (9).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لباس</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">300000</p>
+                                <p class="card-text card-product-price-before">320000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="20">
+                        <img class="card-img-top card-product-img" src="img/product (10).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">لباس</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">280000</p>
+                                <p class="card-text card-product-price-before">320000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="21">
+                        <img class="card-img-top card-product-img" src="img/product (11).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">کفش</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">480000</p>
+                                <p class="card-text card-product-price-before">520000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card card-product" data-quantity="1" value="22">
+                        <img class="card-img-top card-product-img" src="img/product (12).jpg" alt="Title">
+                        <div class="card-body card-product-body text-center px-0">
+                            <h5 class="card-title card-product-title pb-2">کفش</h5>
+                            <div class="price-container d-flex justify-content-evenly w-100">
+                                <p class="card-text card-product-price-after">650000</p>
+                                <p class="card-text card-product-price-before">680000</p>
+                            </div>
+                            <a class="main-btn">خرید</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end product ==================================================== -->
+
+
+
+    <!--start advertisement 2 ==================================================== -->
+    <section class="advertisement-2 my-5 py-5" id="advertisement-2">
+        <div class="container-fluid">
+            <div class="row g-4 px-4">
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/ad-banner (1).jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/ad-banner (2).jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/ad-banner (3).jpg" alt="" class="rounded-4">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img src="img/ad-banner (4).jpg" alt="" class="rounded-4">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end advertisement 2 ==================================================== -->
+
+
+
+    <!--start fashion ==================================================== -->
+    <section class="fashion py-5 my-5" id="fashion">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">بهترین های مد و پوشاک</h1>
+                </div>
+            </div>
+            <div class="row fashion-row-img">
+                <div class="swiper mySwiper fashion-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/fashion (1).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (2).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (3).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (4).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (5).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (6).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (7).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (8).jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/fashion (9).jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end fashion ==================================================== -->
+
+
+
+    <!--start read ==================================================== -->
+    <section class="read py-5 my-5" id="read">
+        <div class="container-fluid">
+            <div class="row read-row-info my-5">
+                <div class="info text-center">
+                    <h1 class="display-5 info-title fw-bold">خواندنی ها</h1>
+                </div>
+            </div>
+            <div class="row g-4 read-row-item">
+                <div class="col-6 col-md-3">
+                    <div class="card read-card shadow">
+                        <img class="card-img-top read-card-img" src="img/read-img (3).jpg" alt="Title">
+                        <div class="card-body read-card-body">
+                            <p class="card-text">راهنمای خرید دسته بازی کامپیوتر آبان ۱۴۰۱</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card read-card shadow">
+                        <img class="card-img-top read-card-img" src="img/read-img (2).jpg" alt="Title">
+                        <div class="card-body read-card-body">
+                            <p class="card-text">بررسی هدفون بلوتوثی بیرداینامیک BYRD-2nd؛ گران‌قیمت و خاص</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card read-card shadow">
+                        <img class="card-img-top read-card-img" src="img/read-img (4).jpg" alt="Title">
+                        <div class="card-body read-card-body">
+                            <p class="card-text">محبوب‌ترین لوازم جانبی شیائومی ردمی ۱۰C در دیجی کالا</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card read-card shadow">
+                        <img class="card-img-top read-card-img" src="img/read-img (1).jpg" alt="Title">
+                        <div class="card-body read-card-body">
+                            <p class="card-text">چطور حرفه‌ای مخالفت کرده و نه بگوییم؟</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end read ==================================================== -->
+
+
+    <!--start register ==================================================== -->
+    <section class="register py-5 my-5" id="register">
+        <div class="container">
+
+            <div class="row">
+                <div class="info text-center">
+                    <h1 class="display-6 pb-4 info-title fw-bold">ثبت نام در خبرنامه</h1>
+                </div>
+            </div>
+
+            <form class="row g-3 w-75 mx-auto register-form">
+                <div class="col-12 register-email">
+                    <label for="inputEmail1" class="form-label">ایمیل</label>
+                    <input type="email" class="form-control" id="inputEmail1">
+                    <div class="register-feedback text-danger small visually-hidden"></div>
+                </div>
+                <div class="col-md-6 register-pass">
+                    <label for="inputPassword1" class="form-label">رمزعبور</label>
+                    <input type="password" class="form-control" id="inputPassword1">
+                    <div class="register-feedback text-danger small visually-hidden"></div>
+                </div>
+                <div class="col-md-6 register-pass-2">
+                    <label for="inputPassword2" class="form-label">تکرار رمزعبور</label>
+                    <input type="password" class="form-control" id="inputPassword2">
+                    <div class="register-feedback text-danger small visually-hidden"></div>
+                </div>
+                <div class="col-12 pt-4 register-submit">
+                    <button type="submit" class="btn btn-primary fw-bold">ثبت نام</button>
+                </div>
+            </form>
+
+
+        </div>
+    </section>
+    <!--end register ==================================================== -->
+
+
+    <!--strat footer ==================================================== -->
+    <section class="footer mt-5 pt-5 pb-2" id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <img src="img/logo.png" alt="" class="logo-img">
+            </div>
+            <div class="row g-4 pb-4">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="list-group w-75">
+                        <h5 class="list-group-item list-group-item-action mb-0 border-0 border-bottom border-secondary">
+                            با ما
+                        </h5>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">اتاق
+                            خبر</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">فرصت
+                            های شغلی</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">تماس
+                            با ما</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">درباره
+                            ما</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="list-group w-75">
+                        <h5 class="list-group-item list-group-item-action mb-0 border-0 border-bottom border-secondary">
+                            خدمات
+                            مشتریان</h5>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">پرسش
+                            های متداول</a>
+                        <a
+                            class="list-group-item list-group-item-action border-0 border-bottom border-secondary">شرایط</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">حریم
+                            خصوصی</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="list-group w-75">
+                        <h5 class="list-group-item list-group-item-action mb-0 border-0 border-bottom border-secondary">
+                            راهنمای خرید</h5>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">نحوه
+                            ثبت سفارش</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">رویه
+                            ارسال</a>
+                        <a class="list-group-item list-group-item-action border-0 border-bottom border-secondary">شیوه
+                            های پرداخت</a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="list-group w-75">
+                        <h5 class="list-group-item list-group-item-action mb-0 border-0 border-bottom border-secondary">
+                            همراه
+                            ما باشید</h5>
+                        <div class="social-icons d-flex py-3">
+                            <a><i class="fs-5 fa fa-facebook" title="facebook"></i></a>
+                            <a><i class="fs-5 fa fa-google-plus" title="google-plus"></i></a>
+                            <a><i class="fs-5 fa fa-twitter" title="twitter"></i></a>
+                            <a><i class="fs-5 fa fa-github-square" title="github"></i></a>
+                            <a><i class="fs-5 fa fa-linkedin" title="linkedin"></i></a>
+                        </div>
+                        <p class="mt-4">برای ثبت نام در خبرنامه <a href="#register">کلیک</a> کنید</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <p class="text-center">
+                    برای استفاده از مطالب ، داشتن «هدف غیرتجاری» و ذکر «منبع» کافیست.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--end footer ==================================================== -->
+
+
+
+
+    <!--start shop ==================================================== -->
+    <section class="shop d-none" id="shop">
+        <div class="container">
+            <div class="shop-container">
+                <button class="btn-close shop-btn-close"></button>
+                <div class="row card-product-row">
+                    <!-- <div class="card shop-card px-0 mb-3 w-100">
+                        <div class="row g-0">
+                            <div class="col-sm-3 shop-card-img-container">
+                                <img src="img/banner.jpg" class="rounded-start shop-card-img" alt="...">
+                            </div>
+                            <div class="col-sm-9 d-flex align-items-center shop-card-body-container">
+                                <div class="card-body shop-card-body">
+                                    <div class="card-text shop-card-text d-flex justify-content-evenly align-items-baseline">
+                                        <span class="category-name fw-bold">لباس</span>
+                                        <span class="minus bg-warning fs-5">&minus;</span>
+                                        <span class="quantity">1</span>
+                                        <span class="plus bg-success fs-5">&plus;</span>
+                                        <span class="price">200000</span>
+                                        <span class="remove-all bg-danger fs-5">&times;</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="row shopping-last-row align-items-center">
+                    <div class="col-12 pb-3 pb-sm-0 col-sm-4 d-flex flex-column align-items-center">
+                        <p class="text-light mb-0 fw-bold">تعداد کل : </p>
+                        <span class="total-quantity text-light fw-bold">0</span>
+                    </div>
+                    <div class="col-12 pb-3 pb-sm-0 col-sm-4 d-flex flex-column align-items-center">
+                        <p class="text-light mb-0 fw-bold">قیمت کل :</p>
+                        <span class="total-price text-light fw-bold">0</span>
+                    </div>
+                    <div class="col-12 pb-3 pb-sm-0 col-sm-4 d-flex flex-column align-items-center">
+                        <p class="text-light mb-0 fw-bold">مجموع سود : </p>
+                        <span class="total-benefit text-light fw-bold">0</span>
+                    </div>
+                    <div
+                        class="col-12 pb-3 pb-sm-0 mt-sm-3 d-flex flex-column align-items-center text-center final-btn-container">
+                        <a type="button" class="btn rounded-pill final-btn">ادامه</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end shop ==================================================== -->
+
+
+
+
+
+
+    <a href="#hero" class="badge text-bg-danger arrow fa fa-arrow-up">
+    </a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <!-- font awesome js -->
+    <script src="https://kit.fontawesome.com/a2006ce608.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
