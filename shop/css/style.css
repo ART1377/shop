@@ -16,7 +16,7 @@
   background-color: var(--primary-color);
   border-radius: 2rem;
 }
-::selection{
+::selection {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
@@ -70,7 +70,7 @@ a:hover {
 .navbar * {
   color: var(--secondary-color) !important;
 }
-.shopping-cart-btn::before{
+.shopping-cart-btn::before {
   color: rgb(255, 255, 255);
 }
 .navbar-toggler {
@@ -314,6 +314,10 @@ a.category-text:hover::before {
   max-height: 150px;
   margin: 0 auto;
 }
+.filter-btn {
+  width: 100px;
+  margin: 0.5rem;
+}
 
 /* fashion ====================================================================== */
 .fashion .swiper {
@@ -494,39 +498,39 @@ a.category-text:hover::before {
   width: 8rem;
   font-weight: bold;
   color: var(--white-color);
-  background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+  background-image: linear-gradient(135deg, #ee9ae5 10%, #5961f9 100%);
 }
 
-.shop-card{
+.shop-card {
   max-height: 200px;
   overflow: hidden;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
 }
-.shop-card-img{
+.shop-card-img {
   max-height: 100px;
 }
-.shop-card-img.container{
+.shop-card-img.container {
   max-height: 100px;
 }
-.shop-card-body-container{
+.shop-card-body-container {
   max-height: 150px;
 }
 
-.shop-card span:nth-child(even){
+.shop-card span:nth-child(even) {
   cursor: pointer;
 }
 
 @media only screen and (max-width: 576px) {
-  .shop-card{
+  .shop-card {
     max-height: 250px;
   }
-  .shop-card-img{
+  .shop-card-img {
     max-height: 150px;
   }
-  .shop-card-img.container{
+  .shop-card-img.container {
     max-height: 150px;
   }
-  .shop-card-body-container{
+  .shop-card-body-container {
     max-height: 200px;
   }
   .shop-card-text {
@@ -536,23 +540,24 @@ a.category-text:hover::before {
 }
 
 
-
-.filter-btn{
-  width: 100px;
-  margin: .5rem;
-}
-
-
-
-body{
-  position: relative;
-}
-
-.arrow{
+/* go up btn =================================================== */
+.arrow {
   position: fixed;
-  right: .4rem;
-  bottom: .4rem;
+  right: 0.4rem;
+  bottom: 0.4rem;
   padding: 1rem;
   border-radius: 100%;
   font-size: 1rem;
+}
+/* progress =================================================== */
+.progress {
+  position: fixed;
+  left: 0;
+  top: 160px;
+  width: 100%;
+  height: 5px;
+  z-index: 100;
+}
+.progress-bar {
+  background-color: red;
 }

@@ -347,7 +347,6 @@ filterBtn.forEach((btn) => {
   });
 });
 
-
 /* calculate and add discount to DOM ================================= */
 const calculateDiscount = () => {
   let htmlBadge = `
@@ -376,3 +375,13 @@ const addDiscount = (price, cardBody) => {
 
 calculateDiscount();
 
+
+/* progress bar ================================= */
+const progressBar = document.querySelector('.progress-bar');
+window.addEventListener('scroll', () => {
+  let totalHeight = document.documentElement.scrollHeight;
+  let scroll = window.scrollY;
+  let bar=112 * (scroll / totalHeight);
+  console.log(bar);
+  progressBar.style.width = `${bar}%`;
+});
