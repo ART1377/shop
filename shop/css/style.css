@@ -182,7 +182,7 @@ img.dropdown-item {
   width: 0.7rem;
   height: 0.7rem;
   border-radius: 50%;
-  background-color: rgb(173, 173, 173);
+  background-color: var(--primary-color);
   margin: 0.5rem;
 }
 .hero-carousel .card-img-overlay {
