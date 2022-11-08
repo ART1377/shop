@@ -379,7 +379,7 @@ calculateDiscount();
 /* progress bar ================================= */
 const progressBar = document.querySelector('.progress-bar');
 window.addEventListener('scroll', () => {
-  let totalHeight = document.documentElement.scrollHeight;
+  let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   let scroll = window.scrollY;
   let bar=112 * (scroll / totalHeight);
   console.log(bar);
